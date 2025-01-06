@@ -1,0 +1,103 @@
+#=============================================================================
+# basic.toml --- basic configuration example for SpaceVim
+# Copyright (c) 2016-2023 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg@outlook.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+  # set spacevim theme. by default colorscheme layer is not loaded,
+  # if you want to use more colorscheme, please load the colorscheme
+  # layer
+  relativenumber = "nil"
+  colorcolumn = 80
+  colorscheme = "molokai"
+  #colorscheme = "desert"
+  nuw = 10 
+  colorscheme_bg = "dark"
+  # Disable guicolors in basic mode, many terminal do not support 24bit
+  # true colors
+  enable_guicolors = true
+  # Disable statusline separator, if you want to use other value, please
+  # install nerd fonts
+  statusline_separator = "arrow"
+  statusline_iseparator = "bar"
+  buffer_index_type = 4
+  windows_index_type = 3
+  enable_tabline_filetype_icon = false
+  enable_statusline_mode = false
+  statusline_unicode = false
+  # Enable vim compatible mode, avoid changing origin vim key bindings
+  vimcompatible = true
+  
+  # filemanater
+  filemanager = "nerdtree"
+  filetree_direction = 'left'
+  enable_filetree_gitstatus = true
+
+  default_indent = 2
+  expand_tab = true
+
+  # nerdcommenter "visual selection puis SPC c L, SPC c u"
+
+  #disabled_plutings = ["neomake.vim"]
+
+
+[[layers]]
+  name = "checkers"
+  lint_on_the_fly = false
+  lint_on_save = true
+  open_error_list = 1
+  show_cursor_error = false
+
+[[layers]]
+  name = "colorscheme"
+
+# Enable autocomplete layer
+[[layers]]
+  name = 'autocomplete'
+
+[[layers]]
+  name = 'shell'
+  default_position = 'bottom'
+  default_height = 30
+# This is a basic configuration example for SpaceVim
+
+[[layers]]
+  name = "ui"
+  enable_scrollbar = true
+  enable_sidebar = true
+  conceallevel = 0
+
+#[[layers]]
+  #name = "incsearch"
+
+[[layers]]
+  name = "VersionControl"
+
+[[layers]]
+  name = "git"
+
+[[layers]]
+  name = "ui"
+  enable_sidebar = true
+  enable_scrollbar = true
+  enable_indentline = true
+  enable_cursorword = false
+  concealcursor = true
+  conceallevel = 1
+  cursor_delay = 20
+
+[[layers]]
+  name = "lang#reason"
+
+[[layers]]
+  name = "lsp"
+  enabled_clients = ['ocamllsp']
+  filetypes = ["ocaml"]
+
+  [layers.override_cmd]
+    ocaml = ["ocamllsp"]
+
