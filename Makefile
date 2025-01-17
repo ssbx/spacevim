@@ -23,12 +23,6 @@ build:
 clean:
 	$(RM) -r build
 
-SpaceVim.d/init.toml: $(HOME)/.SpaceVim.d/init.toml
-	cp $(HOME)/.SpaceVim.d/init.toml SpaceVim.d/init.toml
-
-.PHONY: prepare_push
-prepare_push: SpaceVim.d/init.toml
-
 .PHONY: install
 install: 
 	mkdir -p $(HOME)/.SpaceVim.d/

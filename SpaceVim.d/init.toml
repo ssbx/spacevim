@@ -1,49 +1,48 @@
-#=============================================================================
-# basic.toml --- basic configuration example for SpaceVim
-# Copyright (c) 2016-2023 Wang Shidong & Contributors
-# Author: Wang Shidong < wsdjeg@outlook.com >
-# URL: https://spacevim.org
-# License: GPLv3
-#=============================================================================
-
-# All SpaceVim option below [option] section
 [options]
-  # set spacevim theme. by default colorscheme layer is not loaded,
-  # if you want to use more colorscheme, please load the colorscheme
-  # layer
+
+  vimcompatible = false
+  default_indent = 2
+  expand_tab = true
+
+  # Set spacevim theme. by default colorscheme layer is not loaded,
+  # if you want to use more colorscheme, please load the colorscheme layer
   relativenumber = "nil"
   colorcolumn = 80
   colorscheme = "molokai"
   #colorscheme = "desert"
   nuw = 10 
   colorscheme_bg = "dark"
-  # Disable guicolors in basic mode, many terminal do not support 24bit
-  # true colors
   enable_guicolors = true
+
   # Disable statusline separator, if you want to use other value, please
   # install nerd fonts
   statusline_separator = "arrow"
   statusline_iseparator = "bar"
   buffer_index_type = 4
   windows_index_type = 3
-  enable_tabline_filetype_icon = false
-  enable_statusline_mode = false
-  statusline_unicode = false
-  # Enable vim compatible mode, avoid changing origin vim key bindings
-  vimcompatible = true
+  enable_tabline_filetype_icon = true
+  enable_statusline_mode = true
+  statusline_unicode = true
   
+  # windows
+  windows_leader = '<F1>'
+  windows_smartclose = ''
+
   # filemanater
-  filemanager = "nerdtree"
+  # filemanager = "nerdtree"
   filetree_direction = 'left'
-  enable_filetree_gitstatus = true
+  enable_filetree_filetypeicon = true
+  enable_vimfiler_welcome = true
 
-  default_indent = 2
-  expand_tab = true
-
-  # nerdcommenter "visual selection puis SPC c L, SPC c u"
+  # custom
+  bootstrap_before = 'myspacevim#before'
+  bootstrap_after  = 'myspacevim#after'
 
   #disabled_plutings = ["neomake.vim"]
 
+[[layers]]
+  name = "core"
+  enable_filetree_gitstatus = true
 
 [[layers]]
   name = "checkers"
@@ -69,6 +68,8 @@
   name = "ui"
   enable_scrollbar = true
   enable_sidebar = true
+  enable_indentline = true
+  enable_cursorword = true
   conceallevel = 0
 
 #[[layers]]
