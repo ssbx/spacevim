@@ -1,0 +1,9 @@
+XTerm*Background: dark slate gray
+XTerm*Foreground: antique white
+XTerm*saveLines: 1000
+XTerm*HiForeColor: white
+XTerm*HiBackColor: #c06077
+XTerm*geometry: +50+100
+XTerm*faceName: DejaVu Sans Mono
+XTerm*faceSize: 12
+XTerm*renderFont: true

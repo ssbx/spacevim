@@ -25,7 +25,9 @@ clean:
 
 .PHONY: install
 install: 
-	mkdir -p $(HOME)/.SpaceVim.d/
-	cp SpaceVim.d/init.toml $(HOME)/.SpaceVim.d/init.toml
+	rm -f ../.SpaceVim.d
+	rm -f ../XTerm
+	ln -s ./.SpaceVim/SpaceVim.d ../.SpaceVim.d
+	ln -s ./.SpaceVim/XTerm ../XTerm
 
 .PHONY: clean test
