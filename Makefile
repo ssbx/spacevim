@@ -1,33 +1,25 @@
-test: build/vader | build
-	$(VIM_BIN) -Nu test/vimrc $(VIM_Es) -c 'Vader! test/**'
+SPACEVIM_PATH   = $(HOME)/.SpaceVim
+SPACEVIM_D_PATH = $(HOME)/.SpaceVim.d
+XTERM_PATH      = $(HOME)/XTerm
 
-COVIMERAGE=$(shell command -v covimerage 2>/dev/null || echo build/covimerage/bin/covimerage)
+.PHONY: check
+check:
+	@test "$(PWD)" = "$(SPACEVIM_PATH)" || \
+    (echo "ERROR: \$$(PWD) must equal $(SPACEVIM_PATH)\nSTOP"; false)
 
-test_coverage: $(COVIMERAGE) build/vader | build
-	$(COVIMERAGE) run --source after  --source syntax --source autoload --source colors --source config --source ftplugin $(VIM_BIN) -Nu test/vimrc $(VIM_Es) -c 'Vader! test/**'
-
-#$(COVIMERAGE):
-	#$(COVIMERAGE) run --source after  --source syntax --source autoload --source colors --source config --source ftplugin $(VIM_BIN) -Nu test/vimrc $(VIM_Es) -c 'Vader! test/**'
-
-build/covimerage:
-	virtualenv $@
-build/covimerage/bin/covimerage: | build/covimerage
-	build/covimerage/bin/pip install covimerage
-
-build/vader:
-	git clone --depth 1 https://github.com/junegunn/vader.vim.git $@
-
-build:
-	mkdir -p $@
-
+.PHONY: clean
 clean:
-	$(RM) -r build
+	test -L $(HOME)/.SpaceVim.d && $(RM) $(HOME)/.SpaceVim.d || true
+	test -L $(HOME)/XTerm       && $(RM) $(HOME)/XTerm || true
+	test -L $(HOME)/.vimrc      && $(RM) $(HOME)/.vimrc || true
+	test -L $(HOME)/.vim        && $(RM) $(HOME)/.vim || true
+	test -f $(HOME)/.vimrc      && mv $(HOME)/.vimrc $(HOME)/.vimrc.bk || true
+	test -d $(HOME)/.vim        && mv $(HOME)/.vim $(HOME)/.vim.bk || true
+	test -d $(HOME)/.SpaceVim.d && mv $(HOME)/.SpaceVim.d $(HOME)/.SpaceVim.d.bk || true
+	test -f $(HOME)/XTerm       && mv $(HOME)/XTerm $(HOME)/XTerm.bk || true
 
 .PHONY: install
-install: 
-	rm -f ../.SpaceVim.d
-	rm -f ../XTerm
-	ln -s ./.SpaceVim/SpaceVim.d ../.SpaceVim.d
-	ln -s ./.SpaceVim/XTerm ../XTerm
+install: clean
+	ln -s $(HOME)/.SpaceVim/SpaceVim.d $(HOME)/.SpaceVim.d
+	ln -s $(HOME)/.SpaceVim/XTerm      $(HOME)/XTerm
 
-.PHONY: clean test
