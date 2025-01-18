@@ -36,6 +36,11 @@ XTerm*altIsNotMeta: false
 XTerm*altSendsEscape: false
 XTerm*alternateScroll: false
 XTerm*alwaysBoldMode: false
+XTerm*cursorBlink: false
+XTerm*cursorBlinkXOR: true
+XTerm*cursorOffTime: 300
+XTerm*cursorOnTime: 600
+
 
 ! XTerm*alwaysHighlight: false
 ! XTerm*alwaysUseMods: false
@@ -94,8 +99,6 @@ XTerm*alwaysBoldMode: false
 ! XTerm*combiningChars: 2
 ! XTerm*ctrlFKeys: 10
 ! XTerm*curses  : false
-! XTerm*cursorBlink: false
-! XTerm*cursorBlinkXOR: true
 ! XTerm*cursorColor: #afbfbf
 ! XTerm*cursorOffTime: 300
 ! XTerm*cursorOnTime: 600

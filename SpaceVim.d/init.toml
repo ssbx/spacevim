@@ -4,13 +4,15 @@
   default_indent = 2
   expand_tab = true
 
-  # Set spacevim theme. by default colorscheme layer is not loaded,
-  # if you want to use more colorscheme, please load the colorscheme layer
   relativenumber = "nil"
   colorcolumn = 80
+  nuw = 10 
+  terminal_cursor_shape = 1
+
+  # Set spacevim theme. by default colorscheme layer is not loaded,
+  # if you want to use more colorscheme, please load the colorscheme layer
   colorscheme = "molokai"
   #colorscheme = "desert"
-  nuw = 10 
   colorscheme_bg = "dark"
   enable_guicolors = true
 
