@@ -1,9 +1,260 @@
-XTerm*Background: dark slate gray
-XTerm*Foreground: antique white
-XTerm*saveLines: 1000
-XTerm*HiForeColor: white
-XTerm*HiBackColor: #c06077
+
+XTerm.termName: xterm-256color
+XTerm*Background: #2c2c2c
+XTerm*Foreground: #dcdccc
+XTerm*scrollBar.Background: #ff0000
+XTerm*scrollBar.Foreground: #00ff00
+XTerm*scrollBar.thickness: 20
+XTerm*locale: false
+XTerm*utf8: true
+XTerm*metaSendsEscape: true
+XTerm*HiForeColor: #dcdccc
+XTerm*HiBackColor: #2c2c2c
 XTerm*geometry: +50+100
 XTerm*faceName: DejaVu Sans Mono
 XTerm*faceSize: 12
 XTerm*renderFont: true
+XTerm*keepClipboard: true
+XTerm*keepSelection: true
+XTerm*selectToClipboard: false
+XTerm*selectBackground: #dcdccc
+XTerm*selectForeground: #2c2c2c
+XTerm*savelines: 4096
+XTerm*allowBoldFonts: true
+XTerm*allowPasteControls: true
+XTerm*activeIcon: default
+XTerm*allowC1Printable: false
+XTerm*allowColorOps: true
+XTerm*allowFontOps: false
+XTerm*allowMouseOps: true
+XTerm*allowScrollLock: false
+XTerm*allowSendEvents: false
+XTerm*allowTcapOps: false
+XTerm*allowTitleOps: true
+XTerm*allowWindowOps: false
+XTerm*altIsNotMeta: false
+XTerm*altSendsEscape: false
+XTerm*alternateScroll: false
+XTerm*alwaysBoldMode: false
+
+! XTerm*alwaysHighlight: false
+! XTerm*alwaysUseMods: false
+! XTerm*answerbackString: 
+! XTerm*appcursorDefault: false
+! XTerm*appkeypadDefault: false
+! XTerm*assumeAllChars: true
+! XTerm*autoWrap: true
+! XTerm*awaitInput: false
+! XTerm*backarrowKey: true
+! XTerm*background: #2c2c2c
+! XTerm*bellIsUrgent: false
+! XTerm*bellOnReset: true
+! XTerm*bellSuppressTime: 200
+! XTerm*boldColors: true
+! XTerm*boldFont: 
+! XTerm*boldMode: true
+! XTerm*brokenLinuxOSC: true
+! XTerm*brokenSelections: false
+! XTerm*brokenStringTerm: false
+! XTerm*c132: false
+! XTerm*cacheDoublesize: 8
+! XTerm*cdXtraScroll: false
+! XTerm*charClass: 
+! XTerm*checksumExtension: 0
+! XTerm*cjkWidth: false
+! XTerm*color0  : #263640
+! XTerm*color1  : #d12f2c
+! XTerm*color10 : #a4bd00
+! XTerm*color11 : #d9a400
+! XTerm*color12 : #2ca2f5
+! XTerm*color13 : #8086e8
+! XTerm*color14 : #33c5ba
+! XTerm*color15 : #fdf6e3
+! XTerm*color2  : #819400
+! XTerm*color3  : #b08500
+! XTerm*color4  : #2587cc
+! XTerm*color5  : #696ebf
+! XTerm*color6  : #289c93
+! XTerm*color7  : #bfbaac
+! XTerm*color8  : #4a697d
+! XTerm*color9  : #fa3935
+! XTerm*colorAttrMode: false
+! XTerm*colorBD : XtDefaultForeground
+! XTerm*colorBDMode: false
+! XTerm*colorBL : XtDefaultForeground
+! XTerm*colorBLMode: false
+! XTerm*colorIT : XtDefaultForeground
+! XTerm*colorITMode: false
+! XTerm*colorInnerBorder: false
+! XTerm*colorMode: true
+! XTerm*colorRV : XtDefaultForeground
+! XTerm*colorRVMode: false
+! XTerm*colorUL : XtDefaultForeground
+! XTerm*colorULMode: false
+! XTerm*combiningChars: 2
+! XTerm*ctrlFKeys: 10
+! XTerm*curses  : false
+! XTerm*cursorBlink: false
+! XTerm*cursorBlinkXOR: true
+! XTerm*cursorColor: #afbfbf
+! XTerm*cursorOffTime: 300
+! XTerm*cursorOnTime: 600
+! XTerm*cursorUnderLine: false
+! XTerm*cutNewline: true
+! XTerm*cutToBeginningOfLine: true
+! XTerm*decGraphicsID: 420
+! XTerm*decTerminalID: 420
+! XTerm*defaultString: #
+! XTerm*deleteIsDEL: true
+! XTerm*directColor: true
+! XTerm*disallowedColorOps: SetColor,GetColor,GetAnsiColor
+! XTerm*disallowedFontOps: SetFont,GetFont
+! XTerm*disallowedMouseOps: *
+! XTerm*disallowedPasteControls: BS,DEL,ENQ,EOT,ESC,NUL
+! XTerm*disallowedTcapOps: SetTcap,GetTcap
+! XTerm*disallowedWindowOps: 1,2,3,4,5,6,7,8,9,11,13,14,18,19,20,21,GetSelection,SetSelection,SetWinLines,SetXprop
+! XTerm*dynamicColors: true
+! XTerm*eightBitControl: false
+! XTerm*eightBitInput: true
+! XTerm*eightBitMeta: true
+! XTerm*eightBitOutput: true
+! XTerm*eightBitSelectTypes: 
+! XTerm*eraseSavedLines: true
+! XTerm*faceName: DejaVu Sans Mono
+! XTerm*faceNameDoublesize: 
+! XTerm*faceSize: 12.000000
+! XTerm*faceSize1: 0.000000
+! XTerm*faceSize2: 0.000000
+! XTerm*faceSize3: 0.000000
+! XTerm*faceSize4: 0.000000
+! XTerm*faceSize5: 0.000000
+! XTerm*faceSize6: 0.000000
+! XTerm*fastScroll: false
+! XTerm*font: fixed
+! XTerm*font1   : nil2
+! XTerm*font2   : 5x7
+! XTerm*font3   : 6x10
+! XTerm*font4   : 7x13
+! XTerm*font5   : 9x15
+! XTerm*font6   : 10x20
+! XTerm*font7   : -adobe-courier-medium-r-normal--24-240-75-75-m-150-iso10646-1
+! XTerm*fontDoublesize: true
+! XTerm*fontWarnings: 1
+! XTerm*forceBoxChars: false
+! XTerm*forcePackedFont: true
+! XTerm*forceXftHeight: false
+! XTerm*foreground: #dcdccc
+! XTerm*formatOtherKeys: 0
+! XTerm*freeBoldBox: false
+! XTerm*geometry: +50+100
+! XTerm*highlightColor: XtDefaultForeground
+! XTerm*highlightColorMode: false
+! XTerm*highlightReverse: true
+! XTerm*highlightSelection: false
+! XTerm*highlightTextColor: XtDefaultBackground
+! XTerm*hpLowerleftBugCompat: false
+! XTerm*i18nSelections: true
+! XTerm*iconBorderColor: (skip)
+! XTerm*iconBorderWidth: 2
+! XTerm*iconFont: nil2
+! XTerm*initialFont: 
+! XTerm*inputMethod: 
+! XTerm*internalBorder: 2
+! XTerm*italicULMode: false
+! XTerm*jumpScroll: true
+! XTerm*keyboardDialect: B
+! XTerm*limitFontsets: 50
+! XTerm*limitResize: 1
+! XTerm*limitResponse: 1024
+! XTerm*localeFilter: /usr/bin/luit
+! XTerm*logFile : 
+! XTerm*logInhibit: false
+! XTerm*logging : false
+! XTerm*loginShell: false
+! XTerm*marginBell: false
+! XTerm*maxGraphicSize: 1000x1000
+! XTerm*metaSendsEscape: true
+! XTerm*mkSamplePass: 655
+! XTerm*mkSampleSize: 65535
+! XTerm*mkWidth : false
+! XTerm*modifyCursorKeys: 2
+! XTerm*modifyFunctionKeys: 2
+! XTerm*modifyKeyboard: 0
+! XTerm*modifyKeypadKeys: 0
+! XTerm*modifyOtherKeys: 0
+! XTerm*modifyStringKeys: 0
+! XTerm*multiClickTime: 250
+! XTerm*multiScroll: false
+! XTerm*nMarginBell: 10
+! XTerm*nextEventDelay: 1
+! XTerm*numColorRegisters: 0
+! XTerm*numLock : true
+! XTerm*oldXtermFKeys: false
+! XTerm*on2Clicks: word
+! XTerm*on3Clicks: line
+! XTerm*on4Clicks: (skip)
+! XTerm*on5Clicks: (skip)
+! XTerm*openIm  : true
+! XTerm*pointerColor: XtDefaultForeground
+! XTerm*pointerColorBackground: #2c2c2c
+! XTerm*pointerFont: 
+! XTerm*pointerMode: 1
+! XTerm*pointerShape: xterm
+! XTerm*popOnBell: false
+! XTerm*precompose: true
+! XTerm*preeditType: OverTheSpot,Root
+! XTerm*printAttributes: 1
+! XTerm*printerAutoClose: false
+! XTerm*printerCommand: 
+! XTerm*printerControlMode: 0
+! XTerm*printerExtent: false
+! XTerm*printerFormFeed: false
+! XTerm*printerNewLine: true
+! XTerm*privateColorRegisters: true
+! XTerm*quietGrab: false
+! XTerm*renderFont: true
+! XTerm*resizeGravity: (skip)
+! XTerm*retryInputMethod: 3
+! XTerm*reverseVideo: false
+! XTerm*reverseWrap: false
+! XTerm*rightScrollBar: false
+! XTerm*saveLines: 1000
+! XTerm*scaleHeight: 1.000000
+! XTerm*scrollBar: true
+! XTerm*scrollBarBorder: 1
+! XTerm*scrollKey: false
+! XTerm*scrollLines: 1
+! XTerm*scrollTtyOutput: true
+! XTerm*shiftEscape: false
+! XTerm*shiftFonts: true
+! XTerm*showBlinkAsBold: false
+! XTerm*showMissingGlyphs: false
+! XTerm*showWrapMarks: false
+! XTerm*signalInhibit: false
+! XTerm*sixelScrolling: true
+! XTerm*sixelScrollsRight: false
+! XTerm*tekGeometry: 
+! XTerm*tekInhibit: false
+! XTerm*tekSmall: false
+! XTerm*tekStartup: false
+! XTerm*tiXtraScroll: false
+! XTerm*titeInhibit: false
+! XTerm*titleModes: 0
+! XTerm*trimSelection: false
+! XTerm*underLine: true
+! XTerm*useBorderClipping: false
+! XTerm*useClipping: true
+! XTerm*utf8: true
+! XTerm*utf8Fonts: default
+! XTerm*utf8Latin1: false
+! XTerm*utf8SelectTypes: 
+! XTerm*utf8Title: default
+! XTerm*utf8Weblike: false
+! XTerm*veryBoldColors: 0
+! XTerm*visualBell: false
+! XTerm*visualBellDelay: 100
+! XTerm*visualBellLine: false
+! XTerm*vt100Graphics: true
+! XTerm*wideBoldFont: 
+! XTerm*wideChars: true
+! XTerm*wideFont: 
