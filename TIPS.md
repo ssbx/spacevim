@@ -17,4 +17,7 @@
 - SPC c u (comment selection)
 - SPC c p (toggle comment block)
 
-
+## copy/paste externes
+- nvim -> ext: y (copy vers clipboard)
+- ext -> nvim: middle click
+- nvim -> nvim: y -> middle click (ou p)

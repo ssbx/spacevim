@@ -71,19 +71,20 @@ endif
 
 autocmd BufNewFile,BufRead *.ml,*.mli,*.eliom,*.eliomi :set filetype=ocaml
 "
-  let g:neovide_cursor_animation_length=0.00
-  let g:neovide_cursor_trail_size=0
-  let g:neovide_cursor_animate_in_insert_mode=0
-  let g:neovide_cursor_animate_command_line=0
-  let g:neovide_scroll_animation_far_lines=0
-  let g:neovide_scroll_animation_length=0.00
+let g:neovide_cursor_animation_length=0.00
+let g:neovide_cursor_trail_size=0
+let g:neovide_cursor_animate_in_insert_mode=0
+let g:neovide_cursor_animate_command_line=0
+let g:neovide_scroll_animation_far_lines=0
+let g:neovide_scroll_animation_length=0.00
 
-  noremap <C-h> <C-w>h
-  noremap <C-j> <C-w>j
-  noremap <C-h> <C-w>h
-  noremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-h> <C-w>h
+noremap <C-l> <C-w>l
 
-  " noremap <C-w> :bdelete <CR>
+set clipboard=unnamed
+" noremap <C-w> :bdelete <CR>
   
 
 call SpaceVim#end()
