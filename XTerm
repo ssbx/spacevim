@@ -10,7 +10,7 @@ XTerm*utf8: true
 XTerm*metaSendsEscape: true
 XTerm*HiForeColor: #dcdccc
 XTerm*HiBackColor: #2c2c2c
-XTerm*geometry: +50+100
+XTerm*geometry: 106x26
 XTerm*faceName: DejaVu Sans Mono
 XTerm*faceSize: 12
 XTerm*renderFont: true
