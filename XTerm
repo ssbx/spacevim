@@ -10,7 +10,7 @@ XTerm*utf8: true
 XTerm*metaSendsEscape: true
 XTerm*HiForeColor: #dcdccc
 XTerm*HiBackColor: #2c2c2c
-XTerm*geometry: 106x26
+XTerm*geometry: 95x26
 XTerm*faceName: DejaVu Sans Mono
 XTerm*faceSize: 12
 XTerm*renderFont: true
@@ -40,6 +40,8 @@ XTerm*cursorBlink: false
 XTerm*cursorBlinkXOR: true
 XTerm*cursorOffTime: 300
 XTerm*cursorOnTime: 600
+XTerm*internalBorder: 0
+XTerm*iconBorderWidth: 0
 
 
 ! XTerm*alwaysHighlight: false
@@ -162,7 +164,6 @@ XTerm*cursorOnTime: 600
 ! XTerm*iconFont: nil2
 ! XTerm*initialFont: 
 ! XTerm*inputMethod: 
-! XTerm*internalBorder: 2
 ! XTerm*italicULMode: false
 ! XTerm*jumpScroll: true
 ! XTerm*keyboardDialect: B

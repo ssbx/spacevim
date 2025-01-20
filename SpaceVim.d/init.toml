@@ -1,6 +1,6 @@
 [options]
 
-  vimcompatible = false
+  vimcompatible = true
   default_indent = 2
   expand_tab = true
 
