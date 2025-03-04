@@ -12,7 +12,7 @@ XTerm*HiForeColor: #dcdccc
 XTerm*HiBackColor: #2c2c2c
 XTerm*geometry: 95x26
 XTerm*faceName: DejaVu Sans Mono
-XTerm*faceSize: 12
+XTerm*faceSize: 11
 XTerm*renderFont: true
 XTerm*keepClipboard: true
 XTerm*keepSelection: true
