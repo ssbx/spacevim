@@ -11,9 +11,10 @@
 
   # Set spacevim theme. by default colorscheme layer is not loaded,
   # if you want to use more colorscheme, please load the colorscheme layer
-  colorscheme = "molokai"
-  #colorscheme = "desert"
-  colorscheme_bg = "dark"
+  #colorscheme_bg = "light"
+  #colorscheme = "molokai"
+  # colorscheme = "desert"
+  colorscheme = "gruvbox"
   enable_guicolors = true
 
   # Disable statusline separator, if you want to use other value, please
@@ -81,6 +82,11 @@
   name = "VersionControl"
 
 [[layers]]
+  name = "lang#python"
+  format_on_save = true
+  enable_linters = ['python', 'pylint']
+
+[[layers]]
   name = "git"
 
 [[layers]]
@@ -98,8 +104,7 @@
 
 [[layers]]
   name = "lsp"
-  enabled_clients = ['ocamllsp']
-  filetypes = ["ocaml"]
+  enabled_clients = ['ocamllsp', 'pyright']
 
   [layers.override_cmd]
     ocaml = ["ocamllsp"]
